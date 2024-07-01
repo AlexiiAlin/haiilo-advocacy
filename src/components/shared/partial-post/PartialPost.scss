@@ -1,0 +1,46 @@
+@use '../../../../node_modules/@haiilo/catalyst/dist/catalyst/scss/variables';
+
+.post-container {
+  width: 640px;
+
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    gap: variables.cat-token('size.spacing.s');
+
+    .author-wrapper {
+      display: flex;
+      width: 100%;
+
+      .author-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        .author-image {
+          width: variables.cat-token('size.spacing.l');
+          height: variables.cat-token('size.spacing.l');
+          border-radius: 50%;
+          margin-right: variables.cat-token('size.spacing.s');
+        }
+      }
+
+      .actions-dropdown {
+
+      }
+    }
+
+    .post-image {
+      width: 100%;
+      height: auto;
+      border-radius: variables.cat-token('size.spacing.s');
+      margin-bottom: variables.cat-token('size.spacing.s');
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .post-container {
+    width: 440px;
+  }
+}

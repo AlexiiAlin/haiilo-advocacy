@@ -1,0 +1,12 @@
+@use '../../../node_modules/@haiilo/catalyst/dist/catalyst/scss/variables';
+
+.posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: variables.cat-token('size.spacing.m');
+  padding: variables.cat-token('size.spacing.m') 0;
+
+  .create-post-btn {
+    align-self: end;
+  }
+}

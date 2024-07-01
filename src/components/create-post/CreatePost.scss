@@ -1,0 +1,48 @@
+@use '../../../node_modules/@haiilo/catalyst/dist/catalyst/scss/variables';
+
+.create-post-container {
+  margin: 0 auto;
+  padding: variables.cat-token('size.spacing.l');
+
+  h2 {
+    text-align: center;
+    margin-bottom: variables.cat-token('size.spacing.l');
+  }
+
+  .form-group {
+    margin: variables.cat-token('size.spacing.m') 0;
+
+    label {
+      display: block;
+      margin-bottom: variables.cat-token('size.spacing.xs');
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: variables.cat-token('size.spacing.xs');
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: variables.cat-token('size.spacing.xs');
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

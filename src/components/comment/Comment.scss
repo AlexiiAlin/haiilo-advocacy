@@ -1,0 +1,52 @@
+@use '../../../node_modules/@haiilo/catalyst/dist/catalyst/scss/variables';
+
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  .comment-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .author-wrapper {
+      display: flex;
+
+      .author-image {
+        width: variables.cat-token('size.spacing.l');
+        height: variables.cat-token('size.spacing.l');
+        border-radius: 50%;
+        margin-right: variables.cat-token('size.spacing.s');
+      }
+
+      .author-name {
+        font-size: variables.cat-token('size.line.body.xs');
+      }
+    }
+
+    .comment-text {
+      font-size: variables.cat-token('size.line.body.xs');
+      margin: variables.cat-token('size.spacing.s') 0;
+    }
+  }
+
+  .delete-comment-btn {
+    display: flex;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      background-color: #FFF;
+      border: none;
+      border-radius: variables.cat-token('size.spacing.xs');
+      padding: variables.cat-token('size.spacing.s');
+    }
+  }
+
+  .delete-btn-placeholder {
+    width: variables.cat-token('size.spacing.xl');
+    height: 1px;
+  }
+}

@@ -1,0 +1,6 @@
+@use '../../../node_modules/@haiilo/catalyst/dist/catalyst/scss/variables';
+
+.read-more {
+  font-size: variables.cat-token('size.line.body.xs');
+  text-decoration: none;
+}

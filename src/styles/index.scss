@@ -1,0 +1,23 @@
+// Importing variables and mixins
+@use '@haiilo/catalyst/dist/catalyst/scss/variables';
+$cat-font-path: '~@haiilo/catalyst/dist/catalyst/assets/fonts';
+@import '~@haiilo/catalyst/dist/catalyst/scss';
+
+body {
+  margin: 0;
+  font-family: Lato;
+  font-feature-settings: "liga" 0;
+  font-variant-ligatures: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EBECF0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+html {
+  font-size: 16px; /* This makes 1rem equal to 14px */
+}

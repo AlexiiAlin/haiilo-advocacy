@@ -1,0 +1,1 @@
+export const getCurrentUserEmail = () => 'alexiialin96@gmail.com';
