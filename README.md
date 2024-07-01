@@ -7,9 +7,12 @@
 - _Step 1.1 (OPTIONAL): If you want seed/mocked data for testing, just edit the `src/index.tsx` by uncommenting the_ `line 14: // resetDatabase();` 
 - Step 2: `npm start` (it will open the browser on http://localhost:3000/)
 
-_Note: If you did Step 1.1, an alert should pop-up after a few seconds saying_ 
+_Note 1: If you did Step 1.1, an alert should pop-up after a few seconds saying_ 
 `Database reset and populated successfully!`, _now you need to comment back the_
 `line 14: // resetDatabase();` _and refresh your browser window._
+
+_Note 2: If you want to run the unit tests, simply run `npm run test` in the terminal window._
+
 ### Node version used: `v18.18.1`
 
 ***
